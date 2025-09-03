@@ -1,0 +1,7 @@
+M by N : 20 10
+steps: 30
+robots: 4
+GenericRobot  A  3    4
+SniperRobot  B  random    random
+TankRobot  C  5    4
+FastRobot  D  random    random

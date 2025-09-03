@@ -1,0 +1,1366 @@
+===== ROBOT BATTLE ACTION LOG =====
+Timestamp: 20250601_120111
+====================================
+SETUP: Battlefield initialized with size 10x5
+SETUP: Simulation will run for 50 steps
+SPAWN: A created at position (3,4) with 3 lives and 10 shells
+SPAWN: B created at position (6,0) with 3 lives and 10 shells
+SPAWN: C created at position (0,0) with 3 lives and 10 shells
+SPAWN: D created at position (5,4) with 3 lives and 10 shells
+SPAWN: E created at position (2,1) with 4 lives and 10 shells
+SPAWN: F created at position (6,4) with 3 lives and 10 shells (fast movement)
+Battlefield:
++-----+
+|C....|
+|.....|
+|.E...|
+|....A|
+|.....|
+|....D|
+|B...F|
+|.....|
+|.....|
+|.....|
++-----+
+Robot Details:
+=== SIMULATION START ===
+--- TURN 1 ---
+LOOK: A looks around (3,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (3,4) to (4,4)
+LOOK: B looks around (6,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (6,0) to (6,1)
+LOOK: C looks around (0,0) - No enemies detected
+THINK: C is analyzing situation
+MOVE: C moved from (0,0) to (1,0)
+LOOK: D looks around (5,4) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (4,4) - HIT A
+DAMAGE: A lost a life (Lives remaining: 2)
+MOVE: D moved from (5,4) to (6,3)
+UPGRADE: D upgraded Moving
+MOVING_UPGRADE: D upgraded to JumpBot
+LOOK: E looks around (2,1) - Found enemies
+THINK: E is analyzing situation
+SHOOT: E shoots left up at position (1,0) - HIT C
+DAMAGE: C lost a life (Lives remaining: 2)
+MOVE: E moved from (2,1) to (3,1)
+UPGRADE: E upgraded Healing
+UPGRADE: E → HealBot (5 lives)
+LOOK: F looks around (6,4) - Found enemies
+THINK: F is analyzing situation
+SHOOT: F shoots left at position (6,3) - HIT D
+DAMAGE: D lost a life (Lives remaining: 2)
+MOVE: F moved 2 steps from (6,4) to (8,2)
+UPGRADE: F upgraded Shooting
+Battlefield:
++-----+
+|.....|
+|C....|
+|.....|
+|.E...|
+|....A|
+|.....|
+|.B.D.|
+|.....|
+|..F..|
+|.....|
++-----+
+Robot Details:
+--- TURN 2 ---
+LOOK: A looks around (4,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,4) to (5,4)
+LOOK: B looks around (6,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (6,1) to (6,0)
+LOOK: C looks around (1,0) - No enemies detected
+THINK: C is analyzing situation
+MOVE: C moved from (1,0) to (2,0)
+LOOK: D looks around (6,3) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (5,4) - MISS A
+JUMP: D jumped from (6,3) to (5,2) - 2 jumps remaining
+LOOK: E looks around (3,1) - Found enemies
+THINK: E is analyzing situation
+SHOOT: E shoots left up at position (2,0) - HIT C
+DAMAGE: C lost a life (Lives remaining: 1)
+MOVE: E moved from (3,1) to (2,2)
+UPGRADE: E upgraded Shooting
+LOOK: F looks around (8,2) - No enemies detected
+THINK: F is analyzing situation
+MOVE: F moved from (8,2) to (7,3)
+Battlefield:
++-----+
+|.....|
+|.....|
+|C.E..|
+|.....|
+|.....|
+|....A|
+|B..D.|
+|...F.|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 3 ---
+LOOK: A looks around (5,4) - Found enemies
+THINK: A is analyzing situation
+SHOOT: A shoots left down at position (6,3) - MISS D
+MOVE: A moved from (5,4) to (4,3)
+LOOK: B looks around (6,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (6,0) to (7,0)
+LOOK: C looks around (2,0) - No enemies detected
+THINK: C is analyzing situation
+MOVE: C moved from (2,0) to (1,1)
+LOOK: D looks around (6,3) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (7,3) - HIT F
+DAMAGE: F lost a life (Lives remaining: 2)
+JUMP: D jumped from (6,3) to (5,2) - 1 jumps remaining
+UPGRADE: D upgraded Healing
+UPGRADE: D → HealBot (5 lives)
+LOOK: E looks around (2,2) - Found enemies
+THINK: E is analyzing situation
+SEMI_AUTO: E semi-auto fires at (1,1) - HIT C
+DAMAGE: C lost a life (Lives remaining: 0)
+DESTROYED: C has been destroyed!
+MOVE: E moved from (2,2) to (1,3)
+UPGRADE: E upgraded Moving
+MOVING_UPGRADE: E upgraded to JumpBot
+LOOK: F looks around (7,3) - Found enemies
+THINK: F is analyzing situation
+SHOOT: F shoots up at position (6,3) - HIT D
+DAMAGE: D lost a life (Lives remaining: 4)
+MOVE: F moved from (7,3) to (7,2)
+UPGRADE: F upgraded Moving
+MOVING_UPGRADE: F upgraded to JumpBot
+Battlefield:
++-----+
+|.....|
+|...E.|
+|.....|
+|.....|
+|...A.|
+|.....|
+|...D.|
+|B.F..|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 4 ---
+LOOK: A looks around (4,3) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,3) to (4,4)
+LOOK: B looks around (7,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,0) to (8,0)
+LOOK: D looks around (6,3) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (7,2) - HIT F
+DAMAGE: F lost a life (Lives remaining: 1)
+JUMP: D jumped from (6,3) to (3,0) - 0 jumps remaining
+UPGRADE: D upgraded Shooting
+LOOK: E looks around (1,3) - No enemies detected
+THINK: E is analyzing situation
+JUMP: E jumped from (1,3) to (1,2) - 2 jumps remaining
+LOOK: F looks around (7,2) - Found enemies
+THINK: F is analyzing situation
+SHOOT: F shoots right up at position (6,3) - HIT D
+DAMAGE: D lost a life (Lives remaining: 3)
+MOVE: F moved 2 steps from (7,2) to (9,0)
+UPGRADE: F upgraded Seeing
+SEEING_UPGRADE: F upgraded to ScoutBot
+Battlefield:
++-----+
+|.....|
+|...E.|
+|.....|
+|.....|
+|....A|
+|.....|
+|...D.|
+|.....|
+|B....|
+|F....|
++-----+
+Robot Details:
+--- TURN 5 ---
+LOOK: A looks around (4,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,4) to (3,3)
+LOOK: B looks around (8,0) - Found enemies
+THINK: B is analyzing situation
+SNIPER_SHOT: B targets (9,0) - HIT F
+DAMAGE: F lost a life (Lives remaining: 0)
+DESTROYED: F has been destroyed!
+MOVE: B moved from (8,0) to (7,0)
+UPGRADE: B upgraded Seeing
+SEEING_UPGRADE: B upgraded to TrackBot
+LOOK: D looks around (6,3) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,3) to (5,2)
+LOOK: E looks around (1,3) - No enemies detected
+THINK: E is analyzing situation
+JUMP: E jumped from (1,3) to (4,3) - 1 jumps remaining
+Battlefield:
++-----+
+|.....|
+|...E.|
+|.....|
+|...A.|
+|.....|
+|..D..|
+|.....|
+|B....|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 6 ---
+LOOK: A looks around (3,3) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (3,3) to (2,3)
+LOOK: B looks around (7,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,0) to (7,1)
+LOOK: D looks around (5,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,2) to (6,2)
+LOOK: E looks around (1,3) - Found enemies
+THINK: E is analyzing situation
+SHOOT: E shoots down at position (2,3) - HIT A
+DAMAGE: A lost a life (Lives remaining: 1)
+JUMP: E jumped from (1,3) to (1,0) - 0 jumps remaining
+Battlefield:
++-----+
+|.....|
+|...E.|
+|...A.|
+|.....|
+|.....|
+|.....|
+|..D..|
+|.B...|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 7 ---
+LOOK: A looks around (2,3) - Found enemies
+THINK: A is analyzing situation
+SHOOT: A shoots up at position (1,3) - HIT E
+DAMAGE: E lost a life (Lives remaining: 4)
+MOVE: A moved from (2,3) to (3,3)
+UPGRADE: A upgraded Moving
+MOVING_UPGRADE: A upgraded to HideBot
+LOOK: B looks around (7,1) - Found enemies
+THINK: B is analyzing situation
+SNIPER_SHOT: B targets (6,2) - MISS D
+MOVE: B moved from (7,1) to (8,2)
+LOOK: D looks around (6,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,2) to (7,3)
+LOOK: E looks around (1,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (1,3) to (0,2)
+Battlefield:
++-----+
+|..E..|
+|.....|
+|.....|
+|...A.|
+|.....|
+|.....|
+|.....|
+|...D.|
+|..B..|
+|.....|
++-----+
+Robot Details:
+--- TURN 8 ---
+LOOK: A looks around (3,3) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (3,3) to (4,4)
+LOOK: B looks around (8,2) - Found enemies
+THINK: B is analyzing situation
+SNIPER_SHOT: B targets (7,3) - HIT D
+DAMAGE: D lost a life (Lives remaining: 2)
+MOVE: B moved from (8,2) to (9,2)
+UPGRADE: B upgraded Shooting
+LOOK: D looks around (7,3) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (7,3) to (7,4)
+LOOK: E looks around (0,2) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,2) to (0,1)
+Battlefield:
++-----+
+|.E...|
+|.....|
+|.....|
+|.....|
+|....A|
+|.....|
+|.....|
+|....D|
+|.....|
+|..B..|
++-----+
+Robot Details:
+--- TURN 9 ---
+LOOK: A looks around (4,4) - No enemies detected
+THINK: A is analyzing situation
+HIDE_ACTIVATED: A activated hide mode (2 uses remaining)
+LOOK: B looks around (9,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,2) to (9,3)
+LOOK: D looks around (7,4) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (7,4) to (7,3)
+LOOK: E looks around (0,1) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,1) to (0,0)
+Battlefield:
++-----+
+|E....|
+|.....|
+|.....|
+|.....|
+|....A|
+|.....|
+|.....|
+|...D.|
+|.....|
+|...B.|
++-----+
+Robot Details:
+--- TURN 10 ---
+LOOK: A looks around (4,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,4) to (3,3)
+LOOK: B looks around (9,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,3) to (9,4)
+LOOK: D looks around (7,3) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (7,3) to (6,2)
+LOOK: E looks around (0,0) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,0) to (1,0)
+Battlefield:
++-----+
+|.....|
+|E....|
+|.....|
+|...A.|
+|.....|
+|.....|
+|..D..|
+|.....|
+|.....|
+|....B|
++-----+
+Robot Details:
+--- TURN 11 ---
+LOOK: A looks around (3,3) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (3,3) to (4,4)
+LOOK: B looks around (9,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,4) to (9,3)
+LOOK: D looks around (6,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,2) to (6,1)
+LOOK: E looks around (1,0) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (1,0) to (2,0)
+Battlefield:
++-----+
+|.....|
+|.....|
+|E....|
+|.....|
+|....A|
+|.....|
+|.D...|
+|.....|
+|.....|
+|...B.|
++-----+
+Robot Details:
+--- TURN 12 ---
+HIDE_ENDED: A is no longer hidden
+LOOK: A looks around (4,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,4) to (3,4)
+LOOK: B looks around (9,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,3) to (9,2)
+LOOK: D looks around (6,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,1) to (7,0)
+LOOK: E looks around (2,0) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,0) to (3,1)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.E..A|
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|..B..|
++-----+
+Robot Details:
+--- TURN 13 ---
+LOOK: A looks around (3,4) - No enemies detected
+THINK: A is analyzing situation
+HIDE_ACTIVATED: A activated hide mode (1 uses remaining)
+LOOK: B looks around (9,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,2) to (8,3)
+LOOK: D looks around (7,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (7,0) to (6,1)
+LOOK: E looks around (3,1) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,1) to (2,2)
+Battlefield:
++-----+
+|.....|
+|.....|
+|..E..|
+|....A|
+|.....|
+|.....|
+|.D...|
+|.....|
+|...B.|
+|.....|
++-----+
+Robot Details:
+--- TURN 14 ---
+LOOK: A looks around (3,4) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (3,4) to (4,3)
+LOOK: B looks around (8,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,3) to (9,3)
+LOOK: D looks around (6,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,1) to (5,0)
+LOOK: E looks around (2,2) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,2) to (3,1)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.E...|
+|...A.|
+|D....|
+|.....|
+|.....|
+|.....|
+|...B.|
++-----+
+Robot Details:
+--- TURN 15 ---
+LOOK: A looks around (4,3) - No enemies detected
+THINK: A is analyzing situation
+MOVE: A moved from (4,3) to (3,2)
+LOOK: B looks around (9,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,3) to (9,4)
+LOOK: D looks around (5,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,0) to (6,0)
+LOOK: E looks around (3,1) - Found enemies
+THINK: E is analyzing situation
+SEMI_AUTO: E semi-auto fires at (3,2) - HIT A
+DAMAGE: A lost a life (Lives remaining: 0)
+DESTROYED: A has been destroyed!
+MOVE: E moved from (3,1) to (2,1)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.E...|
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|.....|
+|....B|
++-----+
+Robot Details:
+--- TURN 16 ---
+LOOK: B looks around (9,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,4) to (8,4)
+LOOK: D looks around (6,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,0) to (5,0)
+LOOK: E looks around (2,1) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,1) to (1,1)
+Battlefield:
++-----+
+|.....|
+|.E...|
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|.....|
+|....B|
+|.....|
++-----+
+Robot Details:
+--- TURN 17 ---
+LOOK: B looks around (8,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,4) to (7,4)
+LOOK: D looks around (5,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,0) to (6,1)
+LOOK: E looks around (1,1) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (1,1) to (1,2)
+Battlefield:
++-----+
+|.....|
+|..E..|
+|.....|
+|.....|
+|.....|
+|.....|
+|.D...|
+|....B|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 18 ---
+LOOK: B looks around (7,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,4) to (8,4)
+LOOK: D looks around (6,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (6,1) to (5,2)
+LOOK: E looks around (1,2) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (1,2) to (0,3)
+Battlefield:
++-----+
+|...E.|
+|.....|
+|.....|
+|.....|
+|.....|
+|..D..|
+|.....|
+|.....|
+|....B|
+|.....|
++-----+
+Robot Details:
+--- TURN 19 ---
+LOOK: B looks around (8,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,4) to (7,4)
+LOOK: D looks around (5,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,2) to (5,3)
+LOOK: E looks around (0,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,3) to (0,4)
+Battlefield:
++-----+
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|...D.|
+|.....|
+|....B|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 20 ---
+LOOK: B looks around (7,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,4) to (8,4)
+LOOK: D looks around (5,3) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,3) to (5,2)
+LOOK: E looks around (0,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,4) to (0,3)
+Battlefield:
++-----+
+|...E.|
+|.....|
+|.....|
+|.....|
+|.....|
+|..D..|
+|.....|
+|.....|
+|....B|
+|.....|
++-----+
+Robot Details:
+--- TURN 21 ---
+LOOK: B looks around (8,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,4) to (8,3)
+LOOK: D looks around (5,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,2) to (4,1)
+LOOK: E looks around (0,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,3) to (0,4)
+Battlefield:
++-----+
+|....E|
+|.....|
+|.....|
+|.....|
+|.D...|
+|.....|
+|.....|
+|.....|
+|...B.|
+|.....|
++-----+
+Robot Details:
+--- TURN 22 ---
+LOOK: B looks around (8,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,3) to (7,4)
+LOOK: D looks around (4,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (4,1) to (5,0)
+LOOK: E looks around (0,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (0,4) to (1,4)
+Battlefield:
++-----+
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|....B|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 23 ---
+LOOK: B looks around (7,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,4) to (8,3)
+LOOK: D looks around (5,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,0) to (6,1)
+LOOK: E looks around (1,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (1,4) to (2,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|.D...|
+|.....|
+|...B.|
+|.....|
++-----+
+Robot Details:
+--- TURN 24 ---
+LOOK: B looks around (8,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,3) to (7,2)
+LOOK: D looks around (6,1) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (7,2) - MISS B
+MOVE: D moved from (6,1) to (5,2)
+LOOK: E looks around (2,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,4) to (3,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|....E|
+|.....|
+|..D..|
+|.....|
+|..B..|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 25 ---
+LOOK: B looks around (7,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,2) to (7,1)
+LOOK: D looks around (5,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,2) to (5,1)
+LOOK: E looks around (3,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,4) to (4,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|....E|
+|.D...|
+|.....|
+|.B...|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 26 ---
+LOOK: B looks around (7,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,1) to (8,2)
+LOOK: D looks around (5,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,1) to (4,1)
+LOOK: E looks around (4,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,4) to (5,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|.D...|
+|....E|
+|.....|
+|.....|
+|..B..|
+|.....|
++-----+
+Robot Details:
+--- TURN 27 ---
+LOOK: B looks around (8,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,2) to (7,1)
+LOOK: D looks around (4,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (4,1) to (3,2)
+LOOK: E looks around (5,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (5,4) to (4,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|..D..|
+|....E|
+|.....|
+|.....|
+|.B...|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 28 ---
+LOOK: B looks around (7,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,1) to (8,2)
+LOOK: D looks around (3,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (3,2) to (2,2)
+LOOK: E looks around (4,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,4) to (3,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|..D..|
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|..B..|
+|.....|
++-----+
+Robot Details:
+--- TURN 29 ---
+LOOK: B looks around (8,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,2) to (7,3)
+LOOK: D looks around (2,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (2,2) to (2,3)
+LOOK: E looks around (3,4) - Found enemies
+THINK: E is analyzing situation
+SEMI_AUTO: E semi-auto fires at (2,3) - MISS D
+MOVE: E moved from (3,4) to (3,3)
+Battlefield:
++-----+
+|.....|
+|.....|
+|...D.|
+|...E.|
+|.....|
+|.....|
+|.....|
+|...B.|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 30 ---
+LOOK: B looks around (7,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,3) to (8,4)
+LOOK: D looks around (2,3) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (3,3) - MISS E
+MOVE: D moved from (2,3) to (2,2)
+LOOK: E looks around (3,3) - Found enemies
+THINK: E is analyzing situation
+SHOOT: E shoots left up at position (2,2) - HIT D
+DAMAGE: D lost a life (Lives remaining: 1)
+MOVE: E moved from (3,3) to (3,2)
+Battlefield:
++-----+
+|.....|
+|.....|
+|..D..|
+|..E..|
+|.....|
+|.....|
+|.....|
+|.....|
+|....B|
+|.....|
++-----+
+Robot Details:
+--- TURN 31 ---
+LOOK: B looks around (8,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,4) to (9,4)
+LOOK: D looks around (2,2) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (3,2) - MISS E
+MOVE: D moved from (2,2) to (1,2)
+LOOK: E looks around (3,2) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,2) to (2,3)
+Battlefield:
++-----+
+|.....|
+|..D..|
+|...E.|
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|....B|
++-----+
+Robot Details:
+--- TURN 32 ---
+LOOK: B looks around (9,4) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,4) to (9,3)
+LOOK: D looks around (1,2) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (2,3) - MISS E
+MOVE: D moved from (1,2) to (0,1)
+LOOK: E looks around (2,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,3) to (2,4)
+Battlefield:
++-----+
+|.D...|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|...B.|
++-----+
+Robot Details:
+--- TURN 33 ---
+LOOK: B looks around (9,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,3) to (8,2)
+LOOK: D looks around (0,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (0,1) to (1,0)
+LOOK: E looks around (2,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (2,4) to (3,4)
+Battlefield:
++-----+
+|.....|
+|D....|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|..B..|
+|.....|
++-----+
+Robot Details:
+--- TURN 34 ---
+LOOK: B looks around (8,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,2) to (9,2)
+LOOK: D looks around (1,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (1,0) to (0,1)
+LOOK: E looks around (3,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,4) to (4,4)
+Battlefield:
++-----+
+|.D...|
+|.....|
+|.....|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|..B..|
++-----+
+Robot Details:
+--- TURN 35 ---
+LOOK: B looks around (9,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,2) to (8,3)
+LOOK: D looks around (0,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (0,1) to (1,1)
+LOOK: E looks around (4,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,4) to (3,4)
+Battlefield:
++-----+
+|.....|
+|.D...|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|.....|
+|...B.|
+|.....|
++-----+
+Robot Details:
+--- TURN 36 ---
+LOOK: B looks around (8,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,3) to (9,3)
+LOOK: D looks around (1,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (1,1) to (0,1)
+LOOK: E looks around (3,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,4) to (4,3)
+Battlefield:
++-----+
+|.D...|
+|.....|
+|.....|
+|.....|
+|...E.|
+|.....|
+|.....|
+|.....|
+|.....|
+|...B.|
++-----+
+Robot Details:
+--- TURN 37 ---
+LOOK: B looks around (9,3) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,3) to (9,2)
+LOOK: D looks around (0,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (0,1) to (0,0)
+LOOK: E looks around (4,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,3) to (5,4)
+Battlefield:
++-----+
+|D....|
+|.....|
+|.....|
+|.....|
+|.....|
+|....E|
+|.....|
+|.....|
+|.....|
+|..B..|
++-----+
+Robot Details:
+--- TURN 38 ---
+LOOK: B looks around (9,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,2) to (8,2)
+LOOK: D looks around (0,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (0,0) to (1,0)
+LOOK: E looks around (5,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (5,4) to (5,3)
+Battlefield:
++-----+
+|.....|
+|D....|
+|.....|
+|.....|
+|.....|
+|...E.|
+|.....|
+|.....|
+|..B..|
+|.....|
++-----+
+Robot Details:
+--- TURN 39 ---
+LOOK: B looks around (8,2) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,2) to (8,1)
+LOOK: D looks around (1,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (1,0) to (2,0)
+LOOK: E looks around (5,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (5,3) to (4,2)
+Battlefield:
++-----+
+|.....|
+|.....|
+|D....|
+|.....|
+|..E..|
+|.....|
+|.....|
+|.....|
+|.B...|
+|.....|
++-----+
+Robot Details:
+--- TURN 40 ---
+LOOK: B looks around (8,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,1) to (7,1)
+LOOK: D looks around (2,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (2,0) to (3,0)
+LOOK: E looks around (4,2) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,2) to (3,3)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|D..E.|
+|.....|
+|.....|
+|.....|
+|.B...|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 41 ---
+LOOK: B looks around (7,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,1) to (7,0)
+LOOK: D looks around (3,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (3,0) to (2,0)
+LOOK: E looks around (3,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (3,3) to (4,3)
+Battlefield:
++-----+
+|.....|
+|.....|
+|D....|
+|.....|
+|...E.|
+|.....|
+|.....|
+|B....|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 42 ---
+LOOK: B looks around (7,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,0) to (8,1)
+LOOK: D looks around (2,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (2,0) to (3,0)
+LOOK: E looks around (4,3) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (4,3) to (5,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|....E|
+|.....|
+|.....|
+|.B...|
+|.....|
++-----+
+Robot Details:
+--- TURN 43 ---
+LOOK: B looks around (8,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,1) to (9,0)
+LOOK: D looks around (3,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (3,0) to (4,1)
+LOOK: E looks around (5,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (5,4) to (6,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|.D...|
+|.....|
+|....E|
+|.....|
+|.....|
+|B....|
++-----+
+Robot Details:
+--- TURN 44 ---
+LOOK: B looks around (9,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,0) to (8,0)
+LOOK: D looks around (4,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (4,1) to (3,0)
+LOOK: E looks around (6,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (6,4) to (7,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|.....|
+|.....|
+|....E|
+|B....|
+|.....|
++-----+
+Robot Details:
+--- TURN 45 ---
+LOOK: B looks around (8,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,0) to (9,0)
+LOOK: D looks around (3,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (3,0) to (4,1)
+LOOK: E looks around (7,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (7,4) to (6,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|.D...|
+|.....|
+|....E|
+|.....|
+|.....|
+|B....|
++-----+
+Robot Details:
+--- TURN 46 ---
+LOOK: B looks around (9,0) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (9,0) to (8,1)
+LOOK: D looks around (4,1) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (4,1) to (5,2)
+LOOK: E looks around (6,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (6,4) to (7,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|..D..|
+|.....|
+|....E|
+|.B...|
+|.....|
++-----+
+Robot Details:
+--- TURN 47 ---
+LOOK: B looks around (8,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (8,1) to (7,1)
+LOOK: D looks around (5,2) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (5,2) to (5,1)
+LOOK: E looks around (7,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (7,4) to (6,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|.....|
+|.D...|
+|....E|
+|.B...|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 48 ---
+LOOK: B looks around (7,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (7,1) to (6,1)
+LOOK: D looks around (5,1) - Found enemies
+THINK: D is analyzing situation
+SNIPER_SHOT: D targets (6,1) - HIT B
+DAMAGE: B lost a life (Lives remaining: 2)
+MOVE: D moved from (5,1) to (4,0)
+LOOK: E looks around (6,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (6,4) to (5,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|.....|
+|D....|
+|....E|
+|.B...|
+|.....|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 49 ---
+LOOK: B looks around (6,1) - No enemies detected
+THINK: B is analyzing situation
+MOVE: B moved from (6,1) to (6,2)
+LOOK: D looks around (4,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (4,0) to (3,0)
+LOOK: E looks around (5,4) - No enemies detected
+THINK: E is analyzing situation
+MOVE: E moved from (5,4) to (5,3)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.....|
+|D....|
+|.....|
+|...E.|
+|..B..|
+|.....|
+|.....|
+|.....|
++-----+
+Robot Details:
+--- TURN 50 ---
+LOOK: B looks around (6,2) - Found enemies
+THINK: B is analyzing situation
+SNIPER_SHOT: B targets (5,3) - HIT E
+DAMAGE: E lost a life (Lives remaining: 3)
+MOVE: B moved from (6,2) to (6,3)
+UPGRADE: B upgraded Moving
+MOVING_UPGRADE: B upgraded to HideBot
+LOOK: D looks around (3,0) - No enemies detected
+THINK: D is analyzing situation
+MOVE: D moved from (3,0) to (2,1)
+LOOK: E looks around (5,3) - Found enemies
+THINK: E is analyzing situation
+SEMI_AUTO: E semi-auto fires at (6,3) - HIT B
+DAMAGE: B lost a life (Lives remaining: 1)
+MOVE: E moved from (5,3) to (5,4)
+Battlefield:
++-----+
+|.....|
+|.....|
+|.D...|
+|.....|
+|.....|
+|....E|
+|...B.|
+|.....|
+|.....|
+|.....|
++-----+
+Robot Details:
+GAME_OVER: Max turns reached
+=== SIMULATION COMPLETE ===
+====================================
+===== ACTION LOG END =====

@@ -1,0 +1,9 @@
+M by N : 10 5
+steps: 50
+robots: 6
+GenericRobot  A  3    4
+SniperRobot  B  random    random
+GenericRobot  C  random    random
+SniperRobot  D  5    4
+TankRobot  E  random    random
+FastRobot  F  random    random
