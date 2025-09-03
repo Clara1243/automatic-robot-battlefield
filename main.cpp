@@ -1,13 +1,9 @@
 /**********|**********|**********|
-Program: assignment.cpp
-Course: Data Structures and Algorithms
-Trimester: 2410
+Program: main.cpp
+Course: Object-Oriented Programming and Data Structure
 Name: LIEW WEN XING | ONG JING RU | KUMAR,VIPUL
-ID: 251UC25099 | 242UC244P9 | 243UC2463Q
 Lecture Section: TC4L
 Tutorial Section: T14L
-Email: LIEW.WEN.XING@student.mmu.edu.my | ONG.JING.RU@student.mmu.edu.my | KUMAR.VIPUL@student.mmu.edu.my
-Phone: 011-2627 1044 | 011-1060 1015 | 017-961 2361
 **********|**********|**********/
 
 #include <iostream>
@@ -1637,3 +1633,4 @@ int main()
 
     return 0;
 }
+
